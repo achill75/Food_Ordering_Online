@@ -6,8 +6,8 @@ require_once __DIR__ . '/vendor/autoload.php'; // pastikan composer autoload sud
 include("connection/connect.php");  // koneksi database
 
 $client = new Google_Client();
-$client->setClientId('27219528362-prbo2et81rkdmauv0hqnhcjrh3lidnij.apps.googleusercontent.com'); // ganti dengan client ID dari Google Console
-$client->setClientSecret('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'); // ganti dengan client secret
+$client->setClientId('.apps.googleusercontent.com'); // ganti dengan client ID dari Google Console
+$client->setClientSecret(''); // ganti dengan client secret
 $client->setRedirectUri('http://localhost/Food-Ordering-Sistem-master/g-callback.php'); // sesuaikan
 $client->addScope('email');
 $client->addScope('profile');
